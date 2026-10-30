@@ -3,7 +3,7 @@ version: '3.8'
 services:
   my_script:
     build: .
-    container_name: isolated_bot_1
+    container_name: meta_script_bot_1
     dns:
       - 8.8.8.8
       - 1.1.1.1
