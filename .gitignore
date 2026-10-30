@@ -1,0 +1,15 @@
+/.DS_Store
+/__pycache__
+/config.py
+/debug
+/files
+/inspect_actions.py
+meta-script-*.json
+.ruff_cache
+run_daemon.py
+meta_script.code-workspace
+accounts_config.py
+.env
+venv/
+.venv/
+.vscode/
