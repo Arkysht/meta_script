@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  my_script:
+    build: .
+    container_name: isolated_bot_1
+    # Важно: restart ставим "no", чтобы он не крутился 24/7, 
+    # а завершался после выполнения своей задачи
+    restart: "no"
