@@ -4,6 +4,10 @@ services:
   my_script:
     build: .
     container_name: isolated_bot_1
+    dns:
+      - 8.8.8.8
+      - 1.1.1.1
+    network_mode: "bridge"
     volumes:
       - /opt/meta_ads_bots/meta_script_data/config.py:/app/config.py
       - /opt/meta_ads_bots/meta_script_data/accounts_config.py:/app/accounts_config.py
