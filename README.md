@@ -24,8 +24,8 @@
 Потрібен Python 3.10 або новіший.
 
 ```bash
-git clone https://github.com/Arkysht/meta_ads_to_sheets.git
-cd meta_ads_to_sheets
+git clone https://github.com/Arkysht/meta_script.git
+cd meta_script
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -141,7 +141,7 @@ python meta_ads_to_sheets.py --month 07 --account act_1234567890
 Приклад для cron (щодня о 08:00):
 
 ```
-0 8 * * * cd /path/to/meta_ads_to_sheets && ./venv/bin/python meta_ads_to_sheets.py
+0 8 * * * cd /path/to/meta_script && ./venv/bin/python meta_ads_to_sheets.py
 ```
 
 ## Безпека
