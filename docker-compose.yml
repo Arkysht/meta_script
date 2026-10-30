@@ -4,6 +4,8 @@ services:
   my_script:
     build: .
     container_name: isolated_bot_1
+    volumes:
+      - /opt/meta_ads_bots/meta_script_data:/app/data
     # Важно: restart ставим "no", чтобы он не крутился 24/7, 
     # а завершался после выполнения своей задачи
     restart: "no"
