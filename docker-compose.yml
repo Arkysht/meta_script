@@ -5,7 +5,9 @@ services:
     build: .
     container_name: isolated_bot_1
     volumes:
-      - /opt/meta_ads_bots/meta_script_data:/app/data
+      - /opt/meta_ads_bots/meta_script_data/config.py:/app/config.py
+      - /opt/meta_ads_bots/meta_script_data/accounts_config.py:/app/accounts_config.py
+      - /opt/meta_ads_bots/meta_script_data/meta-script-503423-b7a61ba24895.json:/app/meta-script-503423-b7a61ba24895.json
     # Важно: restart ставим "no", чтобы он не крутился 24/7, 
     # а завершался после выполнения своей задачи
     restart: "no"
